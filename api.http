@@ -1,0 +1,35 @@
+### Create Song 
+POST http://localhost:3000/songs
+Content-Type: application/json
+
+{
+     "title": "New song 2",
+    "releasedDate" : "2023-05-11",
+    "duration" :"02:33",
+    "lyrics": "1adas adsdasd asdasdasd qeqew"
+}
+
+### Find all songs
+GET http://localhost:3000/songs
+
+
+### Find one song
+
+GET http://localhost:3000/songs/6481786f31a6103e10489ced
+
+### Delete Song
+
+DELETE http://localhost:3000/songs/6481793569b739d7236e73b3
+
+### Create Album
+POST http://localhost:3000/albums
+Content-Type: application/json
+
+{
+    "title": "Play",
+    "songs": ["66850c681a725415a25284ce","66852851c39e7984932b0b83"]
+}
+
+### Find all albums with songs
+
+GET http://localhost:3000/albums
